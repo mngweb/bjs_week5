@@ -45,7 +45,6 @@ https://pastebin.com/0zygc3hk.
 
         getRandom(min, max) {	
             return Math.round(Math.random() * (max - min) + min);		
-
         }
 
         checkNumbers(...args){

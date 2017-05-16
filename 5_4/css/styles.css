@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.output, .goodShots {
+    display: inline-block;
+    width: 250px;
+    height: 40px;
+    padding: 0 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background: #A4D5FF;
+
+    font: 14px/40px Tahoma, Arial, sans-serif;
+    text-align: center;
+    color: #3F5263;
+}

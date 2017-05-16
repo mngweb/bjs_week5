@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.progress {
+  width: 50%;
+  height: 30px;
+  border: 2px #ececec solid;
+  margin-bottom: 10px;
+}
+.progress__percentage {
+  width: 0;
+  height: 30px;
+  background-color: #29D58E;
+  position: relative;
+  top: -2px;
+  left: -2px;
+}
+.progress__percentage[style*='width: 100%'] {
+  width: calc(100% + 4px) !important;
+}
+
+.img{
+  width: 25%;
+  float: left;
+  /*opacity: 0*/
+}

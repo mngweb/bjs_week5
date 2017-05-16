@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadanie</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="container"></div>
+
+    <script src="js/es6.js"></script>
+
+    <script>
+        // Zakładamy, że taki obiekt byłby dodany
+        // gdzieś w kodzie HTML w tagu script
+        // przez system CMS generujący widok strony
+        window.currencies = {
+            "USD": 3.8078,
+            "EUR": 4.1794,
+            "GBP": 4.9456
+        };
+
+        let product = {
+            name: "Pendrive 16GB",
+            price: 23,
+            quantity: 4
+        };
+
+        let { name: pName, price: pPrice, quantity: pQuantity } = product;
+
+        let info = formatPrice("GBP")`Kupiłeś produkt '${pName}' w cenie ${pPrice} za sztukę. Łączna wartość zamówienia to ${pPrice * pQuantity}.`;
+
+        console.log(info);
+        document.querySelector("body").innerHTML = info;
+        // Kupiłeś produkt 'Pendrive 16GB' w cenie 4.65 GBP za sztukę. Łączna wartość zamówienia to 18.60 GBP.
+    
+    </script>
+
+
+
+</body>
+
+</html>

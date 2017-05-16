@@ -74,11 +74,11 @@ function getJSON(url, success, fail) {
                     id,
                     name: personName, 
                     username: username, 
-                    email: email, 
+                    email, 
                     address: {
                         geo: [lat, lon]
                     }, 
-                    website: website, 
+                    website, 
                     company: {
                         name: companyName
                     }

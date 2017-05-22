@@ -63,20 +63,10 @@ https://pastebin.com/0zygc3hk.
                 count: goodShots.length
             };
         }
-
-        [Symbol.iterator]() {
-            var numbers = this.numbers,
-                index = 0;
-
-            return {
-                next: function() {
-                    return {
-                        done: (index === numbers.length) ? true : false,
-                        value: numbers[index++]
-                    };
-                }
-            };
-        }
+        
+		*[Symbol.iterator](){ 
+			yield *this.numbers; 
+		}
 
     }
 

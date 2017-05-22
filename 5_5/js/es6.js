@@ -97,7 +97,7 @@ preloadImages(urls)
 
             let docFragm = document.createDocumentFragment();
             imgs.forEach(function(img, i){
-                docFragm.appendChild(createImage(imgs[i]));
+                docFragm.appendChild(createImage(img));
             });
             return docFragm;
     })
